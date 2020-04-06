@@ -3,6 +3,7 @@
 	"displayName": "Coverage Report",
 	"description": "Show UI with code coverage information",
 	"version": "0.0.1",
+	"publisher": "Rafael Rondão",
 	"engines": {
 		"vscode": "^1.43.0"
 	},
