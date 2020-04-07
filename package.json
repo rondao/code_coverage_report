@@ -10,18 +10,18 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
+	"activationEvents": ["onView:coverageReport"],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
+		"views": {
+		  "test": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+			  "id": "coverageReport",
+			  "name": "Code Coverage"
 			}
-		]
-	},
+		  ]
+		}
+	  },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
