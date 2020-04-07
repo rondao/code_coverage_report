@@ -10,18 +10,18 @@
 	"categories": [
 		"Other"
 	],
-	"activationEvents": [
-		"onCommand:extension.helloWorld"
-	],
+	"activationEvents": ["onView:coverageReport"],
 	"main": "./out/extension.js",
 	"contributes": {
-		"commands": [
+		"views": {
+		  "test": [
 			{
-				"command": "extension.helloWorld",
-				"title": "Hello World"
+			  "id": "coverageReport",
+			  "name": "Code Coverage"
 			}
-		]
-	},
+		  ]
+		}
+	  },
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
 		"compile": "tsc -p ./",
@@ -42,5 +42,8 @@
 		"mocha": "^7.0.1",
 		"typescript": "^3.7.5",
 		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"lcov-parse": "^1.0.0"
 	}
 }
