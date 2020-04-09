@@ -8,6 +8,6 @@ All notable changes to the "Code Coverage Report" extension will be documented i
 - Add icons and colors for better coverage representation
 - Add function information provided by lcov.info file.
 
-## [0.0.1] - 2014-05-31
+## [0.0.1] - 2020-04-08
 ### Added
 - Basic functionality of Code Coverage Report with lcov info files.
